@@ -5,8 +5,8 @@
 
 	<parent>
 		<groupId>org.springframework.boot</groupId>
-		<artifactId>spring-cloud-sso</artifactId>
-		<version>Greenwich.SR1</version>
+		<artifactId>spring-boot-starter-parent</artifactId>
+		<version>[2,3)</version>
 		<relativePath />
 	</parent>
 
@@ -14,7 +14,7 @@
 	<artifactId>${artifactId}</artifactId>
 	<version>${version}</version>
 	<packaging>jar</packaging>
-	
+
 	<name>${artifactId}</name>
 	<url>https://github.com/MarceloLeite2604</url>
 
@@ -38,9 +38,17 @@
 
 	<dependencies>
 		<dependency>
-			<groupId>org.springframework.boot</groupId>
-			<artifactId>spring-boot-starter-web</artifactId>
+			<groupId>org.springframework.cloud</groupId>
+			<artifactId>spring-cloud-starter-config</artifactId>
 		</dependency>
 	</dependencies>
 
+	<build>
+		<plugins>
+			<plugin>
+				<groupId>org.springframework.boot</groupId>
+				<artifactId>spring-boot-maven-plugin</artifactId>
+			</plugin>
+		</plugins>
+	</build>
 </project>

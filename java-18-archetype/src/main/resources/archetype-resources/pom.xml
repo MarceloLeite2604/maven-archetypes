@@ -7,7 +7,7 @@
 	<artifactId>${artifactId}</artifactId>
 	<version>${version}</version>
 	<packaging>jar</packaging>
-	
+
 	<name>${artifactId}</name>
 	<url>https://github.com/MarceloLeite2604</url>
 

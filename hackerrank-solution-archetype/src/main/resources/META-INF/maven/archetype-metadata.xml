@@ -1,0 +1,12 @@
+<archetype-descriptor name="hackerrank-solution-archetype">
+
+	<fileSets>
+		<fileSet
+			filtered="true"
+			packaged="false"
+			encoding="UTF-8">
+			<directory>src/main/java</directory>
+		</fileSet>
+	</fileSets>
+
+</archetype-descriptor>
